@@ -9,7 +9,7 @@ class Project_info(models.Model):
     author = models.CharField(max_length=100)
     numOfTemplate = models.IntegerField()
     createdate = models.DateTimeField()
-    updatedate = models.DateTimeField(default = createdate)
+    updatedate = models.DateTimeField()
         
     def __str__(self):
         return self.title

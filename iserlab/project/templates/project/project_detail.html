@@ -1,11 +1,11 @@
 {% extends "personal/header.html" %}
 
 {% block content %}
-    <h3>{{ project.title }}</h3>
-    <h6>Created on {{ project.createdate }}</h6>
-    <h6>Updated on {{ project.updatedate }}</h6>
-    <h6>Created by {{ project.author }}</h6>
-    <h6>This contains {{project.numOfTemplate}} tamplate(s).</h6>
-    {{ project.description|safe|linebreaks }}
+    <h3>{{ project_info.title }}</h3>
+    <h6>Created on {{ project_info.createdate }}</h6>
+    <h6>Updated on {{ project_info.updatedate }}</h6>
+    <h6>Created by {{ project_info.author }}</h6>
+    <h6>This contains {{project_info.numOfTemplate}} tamplate(s).</h6>
+    {{ project_info.description|safe|linebreaks }}
 {% endblock %}
 

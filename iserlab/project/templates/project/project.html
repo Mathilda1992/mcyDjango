@@ -2,8 +2,8 @@
 
 {% block content %}
 
-    {% for project in object_list %}
-<h5>{{ project.createdate|date:"Y-m-d" }}<a href="/project/{{project.id}}">{{ project.title }}</a>(Contains {{ project.numOfTemplate}} Templates)</h5>
+    {% for project_info in object_list %}
+<h5>{{ project_info.createdate|date:"Y-m-d" }}<a href="/project/{{project_info.id}}">{{ project_info.title }}</a>(Contains {{ project_info.numOfTemplate}} Templates)</h5>
     {% endfor %}
 
 {% endblock %}
