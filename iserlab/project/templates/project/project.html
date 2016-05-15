@@ -1,0 +1,10 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+    {% for project in object_list %}
+<h5>{{ project.createdate|date:"Y-m-d" }}<a href="/project/{{project.id}}">{{ project.title }}</a>(Contains {{ project.numOfTemplate}} Templates)</h5>
+    {% endfor %}
+
+{% endblock %}
+
